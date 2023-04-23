@@ -1,15 +1,6 @@
-# SocksLib [![Build Status](https://travis-ci.org/fengyouchao/sockslib.svg?branch=master)](https://travis-ci.org/fengyouchao/sockslib) [![Coverage Status](https://coveralls.io/repos/fengyouchao/sockslib/badge.svg?branch=master&service=github)](https://coveralls.io/github/fengyouchao/sockslib?branch=master) [![Coverity Scan Build Status](https://scan.coverity.com/projects/6898/badge.svg)](https://scan.coverity.com/projects/fengyouchao-sockslib)
+# SocksLib
 
 **SocksLib** is a Java library for **SOCKS5** protocol.
-
-See [Java API Documentation](http://fengyouchao.github.io/projects/fucksocks/apidocs/index.html)
-
-See [Wiki Page](http://git.oschina.net/fyc/fucksocks/wikis/home) (Chinese)
-
-If you are looking for a SOCKS5 server instead of a SOKCS5 library, I hope [Esocks](https://github.com/fengyouchao/esocks) can help you.
-
-
-
 
 #### References
  
@@ -17,6 +8,13 @@ If you are looking for a SOCKS5 server instead of a SOKCS5 library, I hope [Esoc
 * [Username/Password Authentication for SOCKS V5](http://www.ietf.org/rfc/rfc1929.txt)
 
 ## Features
+
+### ⚠ This fork includes the following changes ⚠
+
+- Updated dependencies
+- Removed MongoDB related features
+
+Obtain this library via [Github](https://github.com/HyperCDN/sockslib/packages/) or [Jitpack](https://jitpack.io/#HyperCDN/sockslib) using Maven or Gradle
 
 ### Client
 
@@ -42,16 +40,6 @@ If you are looking for a SOCKS5 server instead of a SOKCS5 library, I hope [Esoc
 #### Environment
 
 * JDK 8+
-
-#### Dependencies
-
-You should put following libraries in your project's *CLASSPATH*:
-
-* [log4j-slf4j-impl-2.4.jar](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.4/log4j-slf4j-impl-2.4.jar)
-* [slf4j-api-1.7.12.jar](https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar)
-* [log4j-api-2.4.jar](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.4/log4j-api-2.4.jar)
-* [log4j-core-2.4.jar](https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.4/log4j-core-2.4.jar)
-* [guava-18.0.jar](https://repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar)
 
 ### SOCKS5 Client
 
