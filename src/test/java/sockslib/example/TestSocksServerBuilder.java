@@ -3,7 +3,7 @@ package sockslib.example;
 import sockslib.common.methods.UsernamePasswordMethod;
 import sockslib.server.SocksProxyServer;
 import sockslib.server.SocksServerBuilder;
-import sockslib.server.manager.MongoDBBasedUserManager;
+import sockslib.server.manager.MemoryBasedUserManager;
 import sockslib.server.manager.UserManager;
 
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.io.IOException;
 public class TestSocksServerBuilder {
 
   public static void main(String[] args) {
-    UserManager userManager = MongoDBBasedUserManager.newDefaultUserManager();
+    UserManager userManager = new MemoryBasedUserManager();
     SocksProxyServer server =
         SocksServerBuilder.newSocks5ServerBuilder().setUserManager(userManager).setSocksMethods
             (new UsernamePasswordMethod()).build();

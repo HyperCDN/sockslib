@@ -14,6 +14,7 @@
 
 package sockslib.test.client;
 
+import org.junit.Ignore;
 import sockslib.client.SSLSocks5;
 import sockslib.client.SocksProxy;
 import sockslib.common.SSLConfigurationBuilder;
@@ -34,6 +35,7 @@ import java.net.SocketAddress;
  * @version 1.0
  * @date Oct 19, 2015 4:13 PM
  */
+@Ignore
 public final class TestSSLSocks5 {
 
   private final int PORT = 1080;

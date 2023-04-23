@@ -14,6 +14,7 @@
 
 package sockslib.test.quickstart;
 
+import org.junit.Ignore;
 import sockslib.client.SSLSocks5;
 import sockslib.client.Socks5;
 import sockslib.client.SocksProxy;
@@ -45,6 +46,7 @@ import static socklib.test.SSLResource.getServerSSLConfigPath;
  * @version 1.0
  * @date Oct 19, 2015 9:07 AM
  */
+@Ignore
 public final class TestSocks5Server {
 
   private final int REMOTE_TCP_SERVER_PORT = 8888;

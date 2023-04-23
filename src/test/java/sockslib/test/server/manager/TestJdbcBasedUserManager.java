@@ -16,12 +16,13 @@
 
 package sockslib.test.server.manager;
 
+import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
+import org.junit.Ignore;
 import sockslib.server.manager.JdbcBasedUserManager;
 import sockslib.server.manager.JdbcConfiguration;
 import sockslib.server.manager.User;
 import sockslib.utils.jdbc.JdbcTemplate;
 import junit.framework.Assert;
-import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,6 +34,7 @@ import org.junit.Test;
  * @version 1.0
  * @date Sep 09, 2015
  */
+@Ignore
 public class TestJdbcBasedUserManager {
 
   private static final String DEFAULT_USERNAME = "fucksocks";

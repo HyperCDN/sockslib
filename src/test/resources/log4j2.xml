@@ -10,8 +10,5 @@
         <root level="TRACE">
             <appender-ref ref="Console"/>
         </root>
-        <logger name="org.mongodb" level="error">
-            <appender-ref ref="Console"/>
-        </logger>
     </loggers>
 </configuration>
