@@ -24,10 +24,7 @@ jobs:
           server-id: github
           settings-path: ${{ github.workspace }}
 
-      - name: Build with Maven
-        run: mvn -Drevision=${{ github.sha }} -Dmaven.test.skip=true -B package --file pom.xml
-
       - name: Publish to GitHub Packages Apache Maven
-        run: mvn deploy -Dmaven.test.skip=true -P release -s $GITHUB_WORKSPACE/settings.xml
+        run: mvn deploy -Drevision=${{ github.sha }} -Dmaven.test.skip=true -P release -s $GITHUB_WORKSPACE/settings.xml
         env:
           GITHUB_TOKEN: ${{ github.token }}
