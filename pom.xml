@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.fengyouchao</groupId>
+    <groupId>io.github.hypercdn</groupId>
     <artifactId>sockslib</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>${revision}</version>
     <packaging>jar</packaging>
 
     <name>sockslibs</name>
     <description>A Java library for SOCKS5 client and SOCKS5 server</description>
-    <url>http://fengyouchao.github.io/sockslib/</url>
+<!--    <url>http://fengyouchao.github.io/sockslib/</url>-->
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -194,9 +194,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/fengyouchao/fucksocks.git</connection>
-        <developerConnection>scm:git:git@github.com:fengyouchao/fucksocks.git</developerConnection>
-        <url>https://github.com/fengyouchao/fucksocks</url>
+        <connection>scm:git:git://github.com/HyperCDN/sockslib.git</connection>
+        <developerConnection>scm:git:git@github.com:HyperCDN/sockslib.git</developerConnection>
+        <url>https://github.com/HyperCDN/sockslib</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -211,13 +211,10 @@
         <profile>
             <id>release</id>
             <distributionManagement>
-                <snapshotRepository>
-                    <id>oss</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-                </snapshotRepository>
                 <repository>
-                    <id>oss</id>
-                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                    <id>github</id>
+                    <name>GitHub Packages</name>
+                    <url>https://maven.pkg.github.com/HyperCDN/sockslib</url>
                 </repository>
             </distributionManagement>
             <build>
