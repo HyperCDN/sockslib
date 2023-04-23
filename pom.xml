@@ -20,7 +20,7 @@
         <log4j.version>2.20.0</log4j.version>
         <jsr305.version>3.0.2</jsr305.version>
         <junit.version>4.13.1</junit.version>
-        <tomcat.dbcp.version>10.1.8</tomcat.dbcp.version>
+        <tomcat.dbcp.version>10.0.27</tomcat.dbcp.version>
         <h2.version>2.1.214</h2.version>
     </properties>
 
